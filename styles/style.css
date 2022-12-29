@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fbc {
+    display: flex;
+    justify-content: space-around ; 
+}
+
+.item {
+background: #3e000c;
+height: 100px;
+width: 100px;
+margin: 10px;
+color: #fff
+}
