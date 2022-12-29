@@ -1,4 +1,4 @@
-* {
+* { /* resets everything */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,11 +6,18 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #3e000c;
+    color: white;
+
 }
 
 .fbc {
-    display: flex;
-    justify-content: space-around ; 
+   
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 .item {
@@ -24,3 +31,51 @@ flex-basis: 100px; /* width */
 margin: 10px;
 color: #fff
 }
+
+.img {
+max-width: 100%
+}
+
+.h1, .h2 {
+    margin-bottom: 16px ;
+}
+
+
+
+.navbar {
+    background: #520010;
+    color: white;
+    height: 80px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.navbar .fbc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
