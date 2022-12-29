@@ -14,9 +14,13 @@ body {
 }
 
 .item {
+display: flex;
+justify-content: center;
+align-items: center;
+
 background: #3e000c;
 height: 100px;
-width: 100px;
+flex-basis: 100px; /* width */
 margin: 10px;
 color: #fff
 }
