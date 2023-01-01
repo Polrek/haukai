@@ -8,41 +8,27 @@ body { /* body styling */
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #3e000c;
+    background: #660014;
     color: white;
-
 }
 
-.fbc { /* styles the flex box containers */
-   
+.fbc { /* styles the flex box container */
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 35px;
 }
 
-/*
-.item {
-display: flex;
-justify-content: center;
-align-items: center;
-
-background: #3e000c;
-height: 100px;
-flex-basis: 100px; this is the width, but in flex lingo
-margin: 10px;
-color: #fff;
+ul { /*global unordered list styling*/
+    list-style-type: none;
 }
-*/
 
-.img { /*global image styling*/
+img { /*global image styling*/
 max-width: 100%
 }
 
-.h1, .h2 { /*global h1 and h2 styling*/
+h1, h2 { /*global h1 and h2 styling*/
     margin-bottom: 16px ;
 }
-
-
 
 .navbar { /*styles the navbar*/
     background: #520010;
@@ -53,6 +39,8 @@ max-width: 100%
 .navbar .logo { /*styles the logo within the navbar*/
     font-weight: bold;
     font-size: xx-large;
+    font-family: 'Fira Sans', sans-serif;
+    user-select: none;
 }
 
 .navbar .fbc { /*styles the flex box container within the nav bar*/
@@ -60,6 +48,12 @@ max-width: 100%
     justify-content: space-between;
     align-items: center;
     height: 100%;
+}
+
+.flex-section { /* styles the flex box containers */
+    max-width: 1100px;
+    margin: 0 auto;
+    
 }
 
 .navbar a { /*styles the links within the navbar*/
@@ -73,11 +67,90 @@ max-width: 100%
     display: flex;
 }
 
-.navbar ul li { /*styles the list items in the nav list*/
-    margin-left: 30px;
+.navbar ul li { /*styles the list items within the nav list*/
+    margin-left: 25px;
 }
 
-ul { /*global unordered list styling*/
-    list-style-type: none;
+.header {
+    background-color:#3e000c;
+    color: white;
+    min-height: 300px;
+    margin: 0;
+    padding: 15px;
 }
 
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header .img {
+    max-width: 400px;
+}
+
+.header .fbc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionpart {
+    display: flex;
+    
+    background: #3e000c;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,70%); /*x-shadow, y-shadow, blur-radius, colour with opacity% */
+    padding: 15px 25px;
+}
+
+.sectionpart p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sectionpart:nth-of-type(odd) { /*thanks frogs. This alternates the image placement through each section*/
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color:#3e000c;
+    color: white;
+    height: 40px;
+}
+
+footer .fbc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*with two itens*/
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .header .fbc {
+        flex-direction: column;
+    }
+
+    .section .sectionpart {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .logo {
+        font-size: x-large;
+    }
+
+    .navbar ul li { /*styles the list items within the nav list*/
+        margin-left: 20px;
+
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: large;
+    }
+}
+
+}
