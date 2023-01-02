@@ -13,17 +13,24 @@ body { /* body styling */
 }
 
 .fbc { /* styles the flex box container */
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 35px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-ul { /*global unordered list styling*/
+.navigation { /*global navigation styling*/
     list-style-type: none;
 }
 
+table {
+    width: 100%;
+    margin-left: 15px;
+}
+
 img { /*global image styling*/
-max-width: 100%
+max-width: 50%
 }
 
 h1, h2 { /*global h1 and h2 styling*/
@@ -63,12 +70,16 @@ h1, h2 { /*global h1 and h2 styling*/
     color: white;
 }
 
-.navbar ul { /*styles the nav list*/
+.navbar .navigation { /*styles the nav list*/
     display: flex;
 }
 
-.navbar ul li { /*styles the list items within the nav list*/
+.navbar .navigation li { /*styles the list items within the nav list*/
     margin-left: 25px;
+}
+
+a:hover {
+    color: black;
 }
 
 .header {
@@ -77,12 +88,14 @@ h1, h2 { /*global h1 and h2 styling*/
     min-height: 300px;
     margin: 0;
     padding: 15px;
+    width: 100%;
 }
 
 .header h1 {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2;
+    margin-right: 15px;
 }
 
 .header .img {
@@ -95,9 +108,11 @@ h1, h2 { /*global h1 and h2 styling*/
     justify-content: space-around;
 }
 
+.header p {
+    margin-right: 15px;
+}
 .sectionpart {
     display: flex;
-    
     background: #3e000c;
     color: white;
     border-radius: 10px;
@@ -107,12 +122,19 @@ h1, h2 { /*global h1 and h2 styling*/
 }
 
 .sectionpart p {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+   
 }
 
-.sectionpart:nth-of-type(odd) { /*thanks frogs. This alternates the image placement through each section*/
+.sectionpart:nth-of-type(odd) { /*thanks frogs. This alternates the image placement through each sectionpart*/
     flex-direction: row-reverse;
+}
+
+.sectionpart:nth-of-type(odd) h2 { /*thanks frogs. This alternates the image placement through each sectionpart*/
+    padding-left: 30px;
+}
+.sectionpart:nth-of-type(even) h2 { /*thanks frogs. This alternates the image placement through each sectionpart*/
+    padding-right: 20px;
 }
 
 footer {
@@ -126,6 +148,7 @@ footer .fbc{
     align-items: center;
     justify-content: space-between; /*with two itens*/
     height: 100%;
+    
 }
 
 @media (max-width: 768px) {
@@ -138,19 +161,34 @@ footer .fbc{
         text-align: center;
     }
 
+    .navbar {
+        height: 10em;
+    }
+
+    footer {
+        height: 4em;
+    }
+
+    .navbar .navigation {
+        flex-direction: column;
+    }
+
+    img {
+        align-self: center;
+    }
+    
+
+
+
+@media (max-width: 480px) { /*designed down to 320px, then recommend not using a potato to access website*/
     .navbar .logo {
         font-size: x-large;
+        align-self: center;
     }
 
-    .navbar ul li { /*styles the list items within the nav list*/
-        margin-left: 20px;
+    
 
-}
-
-@media (max-width: 480px) {
-    .navbar .logo {
-        font-size: large;
-    }
+    
 }
 
 }
