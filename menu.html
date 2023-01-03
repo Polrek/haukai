@@ -1,20 +1,26 @@
 <!DOCTYPE html> <!-- tells the browser that this is html5-->
 <html lang="en"> <!--top level element of the page. lang defines the page language. good for screen readers-->
+
 <head> <!-- holds the metadata which the browser reads-->
     <meta charset="UTF-8"> <!--encoding type-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--document mode for internet explorer (compatibility)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--makes the width of the page the same as the device's screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--makes the width of the page the same as the device's screen-->
     <title>Haukai Restaurant | Menu</title> <!--the title which displays on the tab/window-->
     <link rel="stylesheet" href="styles/style.css" /> <!-- links to the stylesheet in the styles folder-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--tells the browser that its likely to need this resource so the UX can be improved by preemptively initiating this connection-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--tells the browser that its likely to need this resource so the UX can be improved by preemptively initiating this connection-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--could we also use rel="preload" ?-->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap" rel="stylesheet"> <!--allows the use of Poppins and FiraSans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!--allows the use of Poppins and FiraSans font-->
 
 </head>
+
 <body>
+    <main>
     <nav class="navbar"> <!--creates the navbar class-->
         <div class="fbc"> <!--creates the flex box container class inside the navbar-->
-            
+
             <div class="logo">Haukai Restaurant</div>
             <ul class="navigation">
                 <li>
@@ -38,43 +44,53 @@
 
     <header class="header"> <!--creates the header class-->
         <div class="fbc"> <!--uses the flex box container class within the header class-->
-            <div>
+            
                 <h1>Menu</h1>
-                <p>Only the freshest ingredients are used in our offerings to you!
+                <p>Discover the delicious world of Maori cuisine at our restaurant. We pride ourselves on using locally
+                    sourced, indigenous ingredients to create authentic dishes that honor the traditions and heritage of
+                    Aotearoa. From classic favorites to contemporary creations, our menu has something for everyone to
+                    enjoy.
                 </p>
-            </div>
-        <img src="images/kumara.png" alt="Fresh Kumara">
+            
+            <img src="images/kumara.png" alt="Fresh Kumara">
         </div>
     </header>
     <section class="section"> <!--creates the section class-->
         <div class="flex-section"> <!-- uses the flex box container class within the section class -->
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>Appetizers</h2>
                 <table>
-                    <tr>
-                        <td>Rewana Bread</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Paua Fritter</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Raw Fish</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Poached Salmon</td>
-                        <td>22</td>
-                    </tr>
-                    <tr>
-                        <td>Seafood Basket</td>
-                        <td>25</td>
-                    </tr>                     
+                    <tbody>
+                        <tr>
+                            <td>Rewana Bread</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Paua Fritter</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Raw Fish</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Poached Salmon</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>Seafood Basket</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">    
+                
+                <img src="images/rewena.jpg"
+                    alt="Freshly Buttered Rewana Bread">
+                
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>Mains</h2>
                 <table>
                     <tr>
@@ -100,11 +116,13 @@
                     <tr>
                         <td>Venison</td>
                         <td>33</td>
-                    </tr>   
+                    </tr>
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">
+                <img src="images/snapper.png"
+                    alt="Snapper - Fish of the Day">
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>Desserts</h2>
                 <table>
                     <tr>
@@ -123,11 +141,13 @@
                         <td>Banoffee Pie</td>
                         <td>16</td>
                     </tr>
-                    
+
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">
+                <img src="images/steamed-pudding.jpeg"
+                    alt="Hot Steamed Pudding">
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>Red Wine</h2>
                 <table>
                     <tr>
@@ -161,11 +181,13 @@
                     <tr>
                         <td>Pegasus Bay Pinot Noir, 2013, Waipara</td>
                         <td>110</td>
-                    </tr>         
+                    </tr>
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">
+                <img src="images/red-wine-resize.jpg"
+                    alt="Red Wine in Glass">
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>White Wine</h2>
                 <table>
                     <tr>
@@ -199,11 +221,13 @@
                     <tr>
                         <td>Billecart-Salmon Brut Reserve, France</td>
                         <td>120</td>
-                    </tr>         
+                    </tr>
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">
+                <img src="images/white-wine.jpg"
+                    alt="White Wine in Glasses">
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
                 <h2>Beer and Cider</h2>
                 <table>
                     <tr>
@@ -234,12 +258,41 @@
                         <td>Crooked cider</td>
                         <td>10</td>
                     </tr>
-                    
+
                 </table>
-                <img src="https://via.placeholder.com/500x300/000000/FFFFFF/?text=Placeholder+Image" alt="Alt text here">
-            </div>        
-        </div>
+                <img src="images/gp-beer.jpg"
+                    alt="Beer Can">
+            </div>
+            <div class="sectionpart">
+                <!--dividing the container into parts parts so it's easier to arrange things on the page-->
+                <h2>Non Alcoholic</h2>
+                <table>
+                    <tr>
+                        <td>Mineral Water</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Drinks</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Juice</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Tea</td>
+                        <td>3.50</td>
+                    </tr>
+                </table>
+                <img src="images/soft-drink.png"
+                    alt="Coloured Soft Drinks in Glasses">
+            </div>
     </section>
+    </main>
     <footer>
         <div class="fbc"> <!--flex box container class inside the footer-->
             <p>&copy; 2023 Haukai Restaurant</p>
@@ -247,4 +300,5 @@
         </div>
     </footer>
 </body>
+
 </html>

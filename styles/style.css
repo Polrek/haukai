@@ -13,7 +13,7 @@ body { /* body styling */
 }
 
 .fbc { /* styles the flex box container */
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 0 35px;
     margin-left: auto;
     margin-right: auto;
@@ -29,9 +29,15 @@ table {
     margin-left: 15px;
 }
 
-img { /*global image styling*/
-max-width: 50%
+td {
+    padding-bottom: 20px;
 }
+
+img { /*global image styling*/
+max-width:50%
+}
+
+
 
 h1, h2 { /*global h1 and h2 styling*/
     margin-bottom: 16px ;
@@ -123,7 +129,7 @@ a:hover {
 
 .sectionpart p {
     padding: 0 15px;
-   
+      
 }
 
 .sectionpart:nth-of-type(odd) { /*thanks frogs. This alternates the image placement through each sectionpart*/
@@ -134,7 +140,7 @@ a:hover {
     padding-left: 30px;
 }
 .sectionpart:nth-of-type(even) h2 { /*thanks frogs. This alternates the image placement through each sectionpart*/
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 footer {
@@ -176,7 +182,55 @@ footer .fbc{
     img {
         align-self: center;
     }
+
+    td {
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: center;
+        
+        
+    }
+
+    table {
+        margin-left: 0px;
+    }
+
+    .sectionpart h1 {
+        display: flex;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .sectionpart h2 {
+        display: flex;
+        padding-left: 0px;
+        justify-content: center;
+    }
     
+    .sectionpart img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fbc p,h1 {
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .header .fbc h1,p {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .sectionpart:nth-of-type(odd) h2 {
+        padding: 0px;
+    }
+
+    .sectionpart:nth-of-type(even) h2 {
+        padding: 0px;
+    }
 
 
 
@@ -186,6 +240,13 @@ footer .fbc{
         align-self: center;
     }
 
+    .sectionpart img { /*res too small for images to be useful*/
+        display: none;
+    }
+
+    img { /*res too small for images to be useful*/
+        display: none;
+    }
     
 
     
