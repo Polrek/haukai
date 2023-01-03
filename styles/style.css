@@ -87,9 +87,6 @@ h1, h2 { /*global h1 and h2 styling*/
     margin-left: 25px;
 }
 
-a:hover {
-    color:burlywood;
-}
 
 .header {
     background-color:#3e000c;
