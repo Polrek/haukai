@@ -60,6 +60,10 @@ iframe {
     border: none;
 }
 
+#resform h2 {
+    display: none;
+}
+
 /*table styling*/
 table {
     width: 100%;
