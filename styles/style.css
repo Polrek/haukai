@@ -201,7 +201,9 @@ footer .fbc{
 
     .navbar .navigation {
         flex-direction: column;
-    }
+        }
+
+
 
     img {
         align-self: center;
