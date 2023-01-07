@@ -56,6 +56,10 @@ h1, h2 { /*global h1 and h2 styling*/
         margin-bottom: 16px ;
 }
 
+iframe {
+    border: none;
+}
+
 /*table styling*/
 table {
     width: 100%;
