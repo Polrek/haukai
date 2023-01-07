@@ -60,6 +60,13 @@ iframe {
     border: none;
 }
 
+#JotFormIFrame-230031357831851 { /*removed styling from iframe embed code provided by jotform*/
+    min-width: 100%;
+    height:600px;
+    border:none;
+}
+
+
 #resform h2 {
     display: none;
 }
