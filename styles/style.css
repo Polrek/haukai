@@ -162,22 +162,19 @@ td {
 }
 
 .sectionpart a {
-    text-decoration: none;
+    
     font-size: 16px;
     color: white;
 }
 
-.sectionpart .column:nth-of-type(2){
-    margin-left: 40px;
-}
 .sectionpart:nth-of-type(odd) { /*thanks frogs. This alternates the image placement through each sectionpart*/
     flex-direction: row-reverse;
 }
 
-.sectionpart:nth-of-type(odd) h2 { /*thanks frogs. This alternates the image placement through each sectionpart*/
+.sectionpart:nth-of-type(odd) h2 { /*thanks frogs. This alternates the h2 placement through each sectionpart*/
     padding-left: 30px;
 }
-.sectionpart:nth-of-type(even) h2 { /*thanks frogs. This alternates the image placement through each sectionpart*/
+.sectionpart:nth-of-type(even) h2 { /*thanks frogs. This alternates the h2 placement through each sectionpart*/
     padding-right: 30px;
 }
 
