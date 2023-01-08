@@ -303,12 +303,7 @@ footer .fbc{
     img { /*res too small for images to be useful*/
         display: none;
     }
-    
-    .sectionpart iframe {
-        display: none;
-    }
-
-    
+  
 }
 
 }
