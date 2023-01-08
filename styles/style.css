@@ -120,6 +120,10 @@ td {
     color: white;
 }
 
+.navbar a:hover {
+    text-decoration: none;
+}
+
 .navbar .navigation { /*styles the nav list*/
     display: flex;
 }
