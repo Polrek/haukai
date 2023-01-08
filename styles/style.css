@@ -181,6 +181,10 @@ td {
     padding-right: 30px;
 }
 
+.column p {
+    text-align: center;
+}
+
 /*footer styling*/
 footer {
     background-color:#3e000c;
@@ -209,7 +213,10 @@ footer .fbc{
 
     }
 
-
+    li {
+        padding-bottom: 5px;
+        text-align: right;
+    }
 
     .navbar {
         height: 10em;
