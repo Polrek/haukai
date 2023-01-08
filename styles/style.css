@@ -113,7 +113,8 @@ td {
 }
 
 .navbar a { /*styles the links within the navbar*/
-    text-decoration: none;
+    /*text-decoration: none;*/ /*removed to fix level A accessibility issue */
+    list-style: none;
     font-size: 16px;
     font-weight: bold;
     color: white;
