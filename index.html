@@ -1,110 +1,120 @@
 <!DOCTYPE html> <!-- tells the browser that this is html5-->
 <html lang="en"> <!--top level element of the page. lang defines the page language. good for screen readers-->
+
 <head> <!-- holds the metadata which the browser reads-->
     <meta charset="UTF-8"> <!--encoding type-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--document mode for internet explorer (compatibility)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--makes the width of the page the same as the device's screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--makes the width of the page the same as the device's screen-->
     <title>Haukai Restaurant | Home</title> <!--the title which displays on the tab/window-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css"> <!-- links to the stylesheet in the styles folder-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--tells the browser that its likely to need this resource so the UX can be improved by preemptively initiating this connection-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--tells the browser that its likely to need this resource so the UX can be improved by preemptively initiating this connection-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--could we also use rel="preload" ?-->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap" rel="stylesheet"> <!--allows the use of Poppins and FiraSans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!--allows the use of Poppins and FiraSans font-->
 
 </head>
+
 <body>
     <main>
-    <nav class="navbar"> <!--creates the navbar class-->
-        <div class="fbc"> <!--creates the flex box container class inside the navbar-->
-            
-            <div class="logo">Haukai Restaurant</div>
-            <ul class="navigation">
-                <li>
-                    <a href=index.html>Home</a>
-                </li>
-                <li>
-                    <a href=menu.html>Menu</a>
-                </li>
-                <li>
-                    <a href=reservations.html>Reservations</a>
-                </li>
-                <li>
-                    <a href=hours.html>Hours</a>
-                </li>
-                <li>
-                    <a href=contact.html>Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <nav class="navbar"> <!--creates the navbar class-->
+            <div class="fbc"> <!--creates the flex box container class inside the navbar-->
 
-    <header class="header"> <!--creates the header class-->
-        <div class="fbc"> <!--uses the flex box container class within the header class-->
-            <div>
-                <h1>Welcome to Haukai Restaurant</h1>
-                
+                <div class="logo">Haukai Restaurant</div>
+                <ul class="navigation">
+                    <li>
+                        <a href=index.html>Home</a>
+                    </li>
+                    <li>
+                        <a href=menu.html>Menu</a>
+                    </li>
+                    <li>
+                        <a href=reservations.html>Reservations</a>
+                    </li>
+                    <li>
+                        <a href=hours.html>Hours</a>
+                    </li>
+                    <li>
+                        <a href=contact.html>Contact</a>
+                    </li>
+                </ul>
             </div>
-        <img src="images/header_image.webp" alt="Image of restaurant outside">
-        </div>
-    </header>
-    <section class="section"> <!--creates the section class-->
-        <div class="flex-section"> <!-- uses the flex box container class within the section class -->
-            <div class="sectionpart"> <!--dividing the container into parts so it's easier to arrange things on the page-->
-                <h2>About Us</h2>
-                <p>
-                    Welcome to our restaurant, where we proudly celebrate the unique flavors and traditions of Māori and Pakeha cuisine. Our menu features a diverse range of dishes that draw inspiration from both indigenous and European culinary traditions, bringing together the best of both worlds. Our chefs are passionate about using fresh, local ingredients to create dishes that are both delicious and true to their cultural roots. We look forward to sharing a taste of Māori and Pakeha culture with you. 
-                </p>
-                <img src="images/haukai_interior.webp" alt="Image of restaurant inside">    
+        </nav>
+
+        <header class="header"> <!--creates the header class-->
+            <div class="fbc"> <!--uses the flex box container class within the header class-->
+                <div>
+                    <h1>Welcome to Haukai Restaurant</h1>
+
+                </div>
+                <img src="images/header_image.webp" alt="Image of restaurant outside">
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts so it's easier to arrange things on the page-->
-                <h2>Karakia mō te Kai</h2>
-                <p> This karakia is a traditional blessing for our food, presented below in Māori and English. <br><br>
-                    Nau mai e ngā hua,<br>
-                    o te wao,<br>
-                    o te ngakina,<br>
-                    o te wai tai,<br>
-                    o te wai Māori.<br>
-                    Nā Tane,<br>
-                    Nā Rongo,<br>
-                    Nā Tangaroa,<br>
-                    Nā Maru.<br>
-                    Ko Ranginui e tū iho nei,<br>
-                    Ko Papatūānuku e takoto nei.<br>
-                    Tūturu o whiti ka whakamaua kia tina! <em>TINA!</em><br>
-                    Hāumi e! Hui e! <em>TĀIKI E!</em>
-                </p>
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/JAoS5Tv18x4" 
-                    title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    loading="lazy"
-                    >
-                </iframe>
+        </header>
+        <section class="section"> <!--creates the section class-->
+            <div class="flex-section"> <!-- uses the flex box container class within the section class -->
+                <div class="sectionpart">
+                    <!--dividing the container into parts so it's easier to arrange things on the page-->
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to our restaurant, where we proudly celebrate the unique flavors and traditions of Māori
+                        and Pakeha cuisine. Our menu features a diverse range of dishes that draw inspiration from both
+                        indigenous and European culinary traditions, bringing together the best of both worlds. Our
+                        chefs are passionate about using fresh, local ingredients to create dishes that are both
+                        delicious and true to their cultural roots. We look forward to sharing a taste of Māori and
+                        Pakeha culture with you.
+                    </p>
+                    <img src="images/haukai_interior.webp" alt="Image of restaurant inside">
+                </div>
+                <div class="sectionpart">
+                    <!--dividing the container into parts so it's easier to arrange things on the page-->
+                    <h2>Karakia mō te Kai</h2>
+                    <p> This karakia is a traditional blessing for our food, presented below in Māori and English.
+                        <br><br>
+                        Nau mai e ngā hua,<br>
+                        o te wao,<br>
+                        o te ngakina,<br>
+                        o te wai tai,<br>
+                        o te wai Māori.<br>
+                        Nā Tane,<br>
+                        Nā Rongo,<br>
+                        Nā Tangaroa,<br>
+                        Nā Maru.<br>
+                        Ko Ranginui e tū iho nei,<br>
+                        Ko Papatūānuku e takoto nei.<br>
+                        Tūturu o whiti ka whakamaua kia tina! <em>TINA!</em><br>
+                        Hāumi e! Hui e! <em>TĀIKI E!</em>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JAoS5Tv18x4"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="sectionpart">
+                    <!--dividing the container into parts so it's easier to arrange things on the page-->
+                    <h2>Blessing of Food</h2>
+                    <p>
+                        Welcome the gifts of food<br>
+                        from the sacred forests,<br>
+                        from the cultivated gardens,<br>
+                        from the sea,<br>
+                        from the fresh waters.<br>
+                        The food of Tane,<br>
+                        of Rongo,<br>
+                        of Tangaroa,<br>
+                        of Maru.<br>
+                        I acknowledge the sky father who is above me,<br>
+                        the earth mother who lies beneath me.<br>
+                        Let this be my commitment to all!<br>
+                        Draw together! Affirm!<br>
+                    </p>
+
+                </div>
+
             </div>
-            <div class="sectionpart"> <!--dividing the container into parts so it's easier to arrange things on the page-->
-                <h2>Blessing of Food</h2>
-                <p>
-                    Welcome the gifts of food<br>
-                    from the sacred forests,<br>
-                    from the cultivated gardens,<br>
-                    from the sea,<br>
-                    from the fresh waters.<br>
-                    The food of Tane,<br>
-                    of Rongo,<br>
-                    of Tangaroa,<br>
-                    of Maru.<br>
-                    I acknowledge the sky father who is above me,<br>
-                    the earth mother who lies beneath me.<br>
-                    Let this be my commitment to all!<br>
-                    Draw together! Affirm!<br>
-                </p>
-                
-            </div>
-                       
-        </div>
-    </section>
+        </section>
     </main>
     <footer>
         <div class="fbc"> <!--flex box container class inside the footer-->
@@ -113,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>
