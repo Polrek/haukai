@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- tells the browser that this is html5-->
+<html lang="en"> <!--top level element of the page. lang defines the page language. good for screen readers-->
+
+<head> <!-- holds the metadata which the browser reads-->
+    <meta charset="UTF-8"> <!--encoding type-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--document mode for internet explorer (compatibility)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--makes the width of the page the same as the device's screen-->
+    <title>Haukai Restaurant | Hours</title> <!--the title which displays on the tab/window-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css"> <!-- links to the stylesheet in the styles folder-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--tells the browser that its likely to need this resource so the UX can be improved by preemptively initiating this connection-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--could we also use rel="preload" ?-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!--allows the use of Poppins and FiraSans font-->
+
+</head>
+
+<body>
+    <nav class="navbar"> <!--creates the navbar class-->
+        <div class="fbc"> <!--creates the flex box container class inside the navbar-->
+
+            <div class="logo">Haukai Restaurant</div>
+            <ul class="navigation">
+                <li>
+                    <a href=index.html>Home</a>
+                </li>
+                <li>
+                    <a href=menu.html>Menu</a>
+                </li>
+                <li>
+                    <a href=reservations.html>Reservations</a>
+                </li>
+                <li>
+                    <a href=hours.html>Hours</a>
+                </li>
+                <li>
+                    <a href=contact.html>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header"> <!--creates the header class-->
+        <div class="fbc"> <!--uses the flex box container class within the header class-->
+
+            <h1>Restaurant Hours</h1>
+            <p>This page shows our opening hours. Please check the Reservations page to check our availability and to
+                make a booking.</p>
+
+
+        </div>
+    </header>
+    <section class="section"> <!--creates the section class-->
+        <div class="flex-section"> <!-- uses the flex box container class within the section class -->
+            <div class="sectionpart">
+                <!--dividing the container into parts so it's easier to arrange things on the page-->
+                <h2>Hours of Operation</h2>
+                <iframe title="Google Calendar showing hours of operation"
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&src=MTQ0Y2M1ODA5YTEyNGVkOGM4YmZiMWYxMGVlY2FiYzA2ZWU4ZTRkNWEwZGYyMmNlMTZhNmY4Njc2OWE1MDc5YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23C0CA33"
+                    style="border:solid 1px #777" width="800" height="600">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="fbc"> <!--flex box container class inside the footer-->
+            <p>&copy; 2023 Haukai Restaurant</p>
+            <p>Created by Rhys</p>
+        </div>
+    </footer>
+</body>
+
+</html>
